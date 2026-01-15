@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="brasilia">Brasília</option>
+            <!-- Adicione mais opções de estados aqui -->
+        </select>
+
+        <label for="mensagem">Escreva uma mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+
+        <label>O que gosta de fazer?</label>
+        <div>
+            <input type="checkbox" id="estudar" name="atividade[]" value="estudar">
+            <label for="estudar">Estudar</label>
+        </div>
+        <div>
+            <input type="checkbox" id="assistir" name="atividade[]" value="assistir">
+            <label for="assistir">Assistir</label>
+        </div>
+        <div>
+            <input type="checkbox" id="dormir" name="atividade[]" value="dormir">
+            <label for="dormir">Dormir</label>
+        </div>
+        <div>
+            <input type="checkbox" id="academia" name="atividade[]" value="academia">
+            <label for="academia">Academia</label>
+        </div>
+        <div>
+            <input type="checkbox" id="comer" name="atividade[]" value="comer">
+            <label for="comer">Comer</label>
+        </div>
+        <div>
+            <input type="checkbox" id="viajar" name="atividade[]" value="viajar">
+            <label for="viajar">Viajar</label>
+        </div>
+        <div>
+            <input type="checkbox" id="ler" name="atividade[]" value="ler">
+            <label for="ler">Ler</label>
+        </div>
+        <div>
+            <input type="checkbox" id="escrever" name="atividade[]" value="escrever">
+            <label for="escrever">Escrever</label>
+        </div>
+        <div>
+            <input type="checkbox" id="musica" name="atividade[]" value="musica">
+            <label for="musica">Ouvir Música</label>
+        </div>
+        <div>
+            <input type="checkbox" id="esporte" name="atividade[]" value="esporte">
+            <label for="esporte">Praticar Esportes</label>
+        </div>
+        <div>
+            <input type="checkbox" id="jogos" name="atividade[]" value="jogos">
+            <label for="jogos">Jogar Videogames</label>
+        </div>
+    </form>
+</body>
+</html>
